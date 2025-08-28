@@ -1,6 +1,11 @@
 [package]
-name = "valuescript-transpiler"
+name = "valuescript_transpiler"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+swc = "0.168.3"
+swc_common = { version = "0.17.22", features=["tty-emitter"] }
+swc_ecma_ast = "0.76.0"
+swc_ecma_parser = "0.102.2"
+valuescript_compiler = { path = "../valuescript_compiler" }
